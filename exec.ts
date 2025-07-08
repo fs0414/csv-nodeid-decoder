@@ -3,7 +3,7 @@ import { CsvBase64Decoder, decodeBase64Csv } from "./main.ts";
 // 方法1: クラスを使用
 const decoder = new CsvBase64Decoder({
   filePath: "./test.csv",
-  columnNames: ["encoded_id", "encoded_value"]
+  columnNames: ["encoded_id", "encoded_value"],
 });
 await decoder.process();
 
